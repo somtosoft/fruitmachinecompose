@@ -7,4 +7,36 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<!--    accent-->
+    <color name="accent_100">#FFFFDFCC</color>
+    <color name="accent_200">#FFFFBF99</color>
+    <color name="accent_300">#FFFE9F66</color>
+    <color name="accent_400">#FFFE7F33</color>
+    <color name="accent_500">#FFFE5F00</color>
+    <color name="accent_600">#FFCB4C00</color>
+    <color name="accent_700">#FF983900</color>
+    <color name="accent_800">#FF662600</color>
+    <color name="accent_900">#FF331300</color>
+
+<!--    Secondary-->
+    <color name="secondary_100">#FFF7FCF9</color>
+    <color name="secondary_200">#FFEEFAF4</color>
+    <color name="secondary_300">#FFE6F7EE</color>
+    <color name="secondary_400">#FFDDF5E9</color>
+    <color name="secondary_500">#FFD5F2E3</color>
+    <color name="secondary_600">#FFAAC2B6</color>
+    <color name="secondary_700">#FF809188</color>
+    <color name="secondary_800">#FF55615B</color>
+    <color name="secondary_900">#FF2B302D</color>
+
+    <!--    Gray-->
+    <color name="gray_100">#FFF3F4F6</color>
+    <color name="gray_200">#FFE5E7EB</color>
+    <color name="gray_300">#FFD1D5DB</color>
+    <color name="gray_400">#FF9CA3AF</color>
+    <color name="gray_500">#FF6B7280</color>
+    <color name="gray_600">#FF4B5563</color>
+    <color name="gray_700">#FF374151</color>
+    <color name="gray_800">#FF1F2937</color>
+    <color name="gray_900">#FF111827</color>
 </resources>
