@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FruitMachine</string>
+    <string name="credits">Credits</string>
+    <string name="Winning">Winnings</string>
+    <string name="spin">Spin</string>
+    <string name="add_credit">Add Credit</string>
+    <string name="collect">Collect</string>
+
 </resources>
