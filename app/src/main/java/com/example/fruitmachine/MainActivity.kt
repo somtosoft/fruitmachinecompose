@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -54,7 +55,7 @@ fun BodyContent() {
             horizontalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Fruit Machine",
+                text = stringResource(id = R.string.fruit_machine),
                 color = Color.Blue,
                 fontSize = 36.sp
             )
@@ -63,8 +64,9 @@ fun BodyContent() {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .fillMaxHeight()
-                .background(Color.Red)
+                .fillMaxHeight(),
+            verticalArrangement = Arrangement.Bottom
+
         ) {
 //            Status row
             StatsRow()
@@ -78,10 +80,10 @@ fun BodyContent() {
 }
 
 @Composable
-fun StatsItem(label: String = "Label", value: Int = 0) {
+fun StatsItem(value: Int = 0, labelResourceId:Int) {
     Column() {
         Text(
-            text = label,
+            text = stringResource(id = labelResourceId),
             style = TextStyle(
                 fontSize = 16.sp,
                 textAlign = TextAlign.Center,
@@ -126,7 +128,7 @@ fun StatsRow() {
                 .fillMaxHeight()
         ) {
 //                Stats Item
-            StatsItem(label = "Credits", value = 100)
+            StatsItem( value = 100, labelResourceId = R.string.credits)
         }
         Box(
             modifier = Modifier
@@ -134,7 +136,7 @@ fun StatsRow() {
                 .fillMaxHeight()
         ) {
 //                Stats Item
-            StatsItem(label = "Winnings", value = 3)
+            StatsItem( value = 3, labelResourceId = R.string.winnings)
         }
     }
 }
@@ -144,7 +146,6 @@ fun ReelRow() {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.Blue)
             .height(200.dp),
         horizontalArrangement = Arrangement.spacedBy(16.dp)
     ) {
@@ -154,7 +155,6 @@ fun ReelRow() {
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxHeight()
-                    .background(Color.Yellow)
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.apple),
@@ -183,11 +183,11 @@ fun ButtonRow(){
 @Composable
 fun DefaultPreview() {
     FruitMachineTheme {
-//        BodyContent()
+        BodyContent()
 
 //        StatsRow()
 //        ReelRow()
-        ButtonRow()
+//        ButtonRow()
     }
 
 }
